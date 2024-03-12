@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table table-bordered mt-5">
+    <thead>
+      <tr>
+        <th scope="col">Streams</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <div *ngFor="let stream of streams">
+          <td>
+            <div>{{ stream.name }}</div>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+  </table>
+</div>
