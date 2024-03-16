@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="mx-5">
+    <form class="row g-3">
+      <div class="row mt-5">
+        <div class="col-md-5">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-control" [required]="true" />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label">Second Name</label>
+          <input type="text" class="form-control" [required]="true" />
+        </div>
+        <div class="col-md-5">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-control" [required]="true" />
+        </div>
+      </div>
+      <div class="col-5">
+        <label for="inputAddress" class="form-label">DateOfBirth</label>
+        <input
+          type="date"
+          class="form-control"
+          id="inputAddress"
+          [required]="true"
+          placeholder="1234 Main St"
+        />
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <label class="form-label">Stream</label>
+          <select class="form-select">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Gender</label>
+          <select id="inputState" class="form-select">
+            <option selected>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-12 mt-4">
+        <button type="submit" class="btn btn-primary">Add Student</button>
+      </div>
+    </form>
+  </div>
+</div>
