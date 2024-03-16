@@ -5,7 +5,7 @@ namespace API.Models.Student
     public class Student
     {
  
-        public required string RegistratioNumber { get; set; }
+        public required string RegistrationNumber { get; set; }
 
    
         public required string FirstName { get; set; }  

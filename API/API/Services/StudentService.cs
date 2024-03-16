@@ -17,19 +17,33 @@ namespace API.Services
 
         public String Create(Student student)
         {
-            conn = new SqlConnection(_configuration.GetConnectionString("ConnectionString:StudentDb"));
-            conn.Open();
+            // string connectionString = _configuration.GetConnectionString("StudentDb");
+            string connectionString = "data source=Sanjula\\SQLEXPRESS02;initial catalog=StudentDb; integrated security=true";
 
-            SqlCommand cmd = new SqlCommand("INSERT INTO students (registratioNumber, firstName, secondName, lastName, dateOfBirth, stream, gender) VALUES('"+student.RegistratioNumber+ "','" +student.FirstName+ "','" +student.SecondName +"','" + student.LastName + "','" + student.DateOfBirth + "','" + student.Stream + "','" + student.Gender + "')",conn);
-            int i = cmd.ExecuteNonQuery();
-
-            if(i > 0)
+            if (string.IsNullOrEmpty(connectionString))
             {
-                return $"Student Registered with Register No: {student.RegistratioNumber}";
+                // Handle null or empty connection string
+                return $"Error: Connection string is null or empty.connectionString: {connectionString}";
             }
-            else
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                return "Error";
+                conn.Open();
+
+
+
+                SqlCommand cmd = new SqlCommand("INSERT INTO students (registrationNumber, firstName, secondName, lastName, stream, gender) VALUES('" + student.RegistrationNumber + "','" + student.FirstName + "','" + student.SecondName + "','" + student.LastName + "','" + student.Stream + "','" + student.Gender + "')", conn);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+
+                if (rowsAffected > 0)
+                {
+                    return $"Student registered with Registration No: {student.RegistrationNumber}";
+                }
+                else
+                {
+                    return "Error: Failed to register student.";
+                }
             }
 
 
