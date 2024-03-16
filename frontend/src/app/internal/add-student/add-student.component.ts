@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StreamsService } from '../streams.service';
+import { InternalService } from '../internal.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Student } from 'interface';
 
@@ -12,7 +12,10 @@ export class AddStudentComponent {
   studentForm!: FormGroup;
   streams: any[] = [];
 
-  constructor(private streamService: StreamsService, private fb: FormBuilder) {}
+  constructor(
+    private internalService: InternalService,
+    private fb: FormBuilder
+  ) {}
 
   ngOnInit(): void {
     this.studentForm = this.fb.group({
@@ -24,7 +27,7 @@ export class AddStudentComponent {
       gender: ['', Validators.required],
     });
 
-    this.streamService.getStreams().subscribe({
+    this.internalService.getStreams().subscribe({
       next: (res: any) => {
         this.streams = res;
       },
@@ -37,7 +40,15 @@ export class AddStudentComponent {
   onSubmit(): void {
     if (this.studentForm.valid) {
       const newStudent: Student = this.studentForm.value;
-      console.log('newStudent>> ', newStudent);
+
+      this.internalService.registerStudent(newStudent).subscribe({
+        next: (res: any) => {
+          alert('Student Registered with ID: ' + res.result);
+        },
+        error: (err) => {
+          console.log('error>> ', err);
+        },
+      });
     } else {
       console.log('form is invalid');
     }

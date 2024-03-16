@@ -5,13 +5,13 @@ namespace API.Models.Student
     public class Student
     {
  
-        public required string RegistrationNumber { get; set; }
+        public string? RegistrationNumber { get; set; }
 
    
         public required string FirstName { get; set; }  
 
 
-        public required string SecondName { get; set; }  
+        public string? SecondName { get; set; }  
 
         public required string LastName { get; set; }
 

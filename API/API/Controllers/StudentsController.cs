@@ -17,10 +17,11 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public ActionResult<string> Post(Student student)
+        public ActionResult<object> Post(Student student)
         {
             var result = studentService.Create(student);
-            return Ok(result);
+            return Ok(new { result });
         }
+
     }
 }
