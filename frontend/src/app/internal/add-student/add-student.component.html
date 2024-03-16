@@ -1,18 +1,33 @@
 <div class="container">
   <div class="mx-5">
-    <form class="row g-3">
+    <form class="row g-3" [formGroup]="studentForm" (ngSubmit)="onSubmit()">
       <div class="row mt-5">
         <div class="col-md-5">
           <label class="form-label">First Name</label>
-          <input type="text" class="form-control" [required]="true" />
+          <input
+            type="text"
+            class="form-control"
+            formControlName="firstName"
+            id="firstName"
+          />
         </div>
         <div class="col-md-5">
           <label class="form-label">Second Name</label>
-          <input type="text" class="form-control" [required]="true" />
+          <input
+            type="text"
+            class="form-control"
+            formControlName="secondName"
+            id="secondName"
+          />
         </div>
         <div class="col-md-5">
           <label class="form-label">Last Name</label>
-          <input type="text" class="form-control" [required]="true" />
+          <input
+            type="text"
+            class="form-control"
+            formControlName="lastName"
+            id="lastName"
+          />
         </div>
       </div>
       <div class="col-5">
@@ -21,15 +36,15 @@
           type="date"
           class="form-control"
           id="inputAddress"
-          [required]="true"
-          placeholder="1234 Main St"
+          formControlName="dateOfBirth"
+          id="dateOfBirth"
         />
       </div>
       <div class="row mt-4">
         <div class="col-md-7">
           <label class="form-label">Stream</label>
-          <select class="form-select">
-            <option *ngFor="let stream of streams" [value]="stream.id">
+          <select class="form-select" formControlName="stream" id="stream">
+            <option *ngFor="let stream of streams" [value]="stream.name">
               {{ stream.name }}
             </option>
           </select>
@@ -37,15 +52,26 @@
 
         <div class="col-md-3">
           <label for="inputState" class="form-label">Gender</label>
-          <select id="inputState" class="form-select">
-            <option selected>Male</option>
-            <option>Female</option>
+          <select
+            id="inputState"
+            class="form-select"
+            formControlName="gender"
+            id="gender"
+          >
+            <option selected value="Male">Male</option>
+            <option value="Female">Female</option>
           </select>
         </div>
       </div>
 
       <div class="col-12 mt-4">
-        <button type="submit" class="btn btn-primary">Add Student</button>
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!this.studentForm.valid"
+        >
+          Add Student
+        </button>
       </div>
     </form>
   </div>
