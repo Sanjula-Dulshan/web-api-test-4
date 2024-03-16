@@ -32,7 +32,7 @@ namespace API.Services
 
 
 
-                SqlCommand cmd = new SqlCommand("INSERT INTO students (registrationNumber, firstName, secondName, lastName, stream, gender) VALUES('" + student.RegistrationNumber + "','" + student.FirstName + "','" + student.SecondName + "','" + student.LastName + "','" + student.Stream + "','" + student.Gender + "')", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO students (registrationNumber, firstName, secondName, lastName,dateOfBirth, stream, gender) VALUES('" + student.RegistrationNumber + "','" + student.FirstName + "','" + student.SecondName + "','" + student.LastName + "','" +student.DateOfBirth + "','" +student.Stream + "','" + student.Gender + "')", conn);
 
                 int rowsAffected = cmd.ExecuteNonQuery();
 

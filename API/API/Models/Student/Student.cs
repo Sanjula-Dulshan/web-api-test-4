@@ -15,7 +15,7 @@ namespace API.Models.Student
 
         public required string LastName { get; set; }
 
-        public Date? DateOfBirth { get; set; } = default;
+        public required DateTime DateOfBirth { get; set; } = default;
 
         public required string Stream { get; set; }
 
