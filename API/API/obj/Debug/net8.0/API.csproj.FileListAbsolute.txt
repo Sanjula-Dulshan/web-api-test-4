@@ -90,3 +90,9 @@ E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Tas
 E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\obj\Debug\net8.0\API.pdb
 E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\obj\Debug\net8.0\ref\API.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\SLIIT\3 rd year\1st sem\I.G. Sanjula Dulshan\I wonder\Daily Work\20240311\Task 4\API\API\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

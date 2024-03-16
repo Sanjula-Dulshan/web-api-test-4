@@ -17,6 +17,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
         new MongoClient(builder.Configuration.GetValue<string>("DatabaseSettings:ConnectionString")));
 
 builder.Services.AddScoped<IStreamService, StreamService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
 
 
 builder.Services.AddCors(options =>

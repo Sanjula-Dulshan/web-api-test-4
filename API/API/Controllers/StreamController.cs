@@ -1,5 +1,5 @@
-﻿using API.Models;
-using API.Services.Streams;
+﻿using API.Models.Streams;
+using API.Services;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
