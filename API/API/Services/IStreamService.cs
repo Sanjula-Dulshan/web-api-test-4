@@ -1,4 +1,4 @@
-﻿using API.Models;
+﻿using API.Models.Streams;
 
 namespace API.Services
 {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 3\\API\\API\\API.csproj": {}
+    "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 4\\API\\API\\API.csproj": {}
   },
   "projects": {
-    "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 3\\API\\API\\API.csproj": {
+    "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 4\\API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 3\\API\\API\\API.csproj",
+        "projectUniqueName": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 4\\API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 3\\API\\API\\API.csproj",
+        "projectPath": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 4\\API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\sduls\\.nuget\\packages\\",
-        "outputPath": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 3\\API\\API\\obj\\",
+        "outputPath": "E:\\SLIIT\\3 rd year\\1st sem\\I.G. Sanjula Dulshan\\I wonder\\Daily Work\\20240311\\Task 4\\API\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sduls\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,6 +52,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.6, )"
             }
           },
           "imports": [
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

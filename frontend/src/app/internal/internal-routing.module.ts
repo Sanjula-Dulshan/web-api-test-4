@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StreamsComponent } from './streams/streams.component';
+import { AddStudentComponent } from './add-student/add-student.component';
 
-const routes: Routes = [{ path: '', component: StreamsComponent }];
+const routes: Routes = [{ path: '', component: AddStudentComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
