@@ -1,6 +1,5 @@
-﻿
-using API.Database;
-using API.Models;
+﻿using API.Database;
+ using API.Models.Streams;
 using MongoDB.Driver;
 
 namespace API.Services
@@ -18,13 +17,13 @@ namespace API.Services
 
         public Streams Create(Streams stream)
         {
-           _streams.InsertOne(stream);
+            _streams.InsertOne(stream);
             return stream;
         }
 
         public List<Streams> Get()
         {
-           return _streams.Find(stream=>true).ToList();
+            return _streams.Find(stream => true).ToList();
         }
     }
 }
